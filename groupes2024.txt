@@ -1,0 +1,48 @@
+Commandes GAP utilisées pour produire les données de l'article "A la rencontre des 46 groupes d'ordre 2024".
+
+gap> LoadPackage("grpconst");
+gap> LoadPackage("xmod");
+gap> L:= ConstructAllGroups(2024);;
+
+I.1
+
+Vérification du Théorème 1
+
+gap> Length(L);
+46
+
+I.2.2
+
+Taille des groupes d'automorphismes (Tableau 3)
+
+gap> for g in L do Print(StructureDescription(g)," & ",Size(AutomorphismGroup(g)),"\n") ;od;
+
+Centre, Automorphismes, Automorphismes intérieurs
+
+gap> for g in L do 
+> 	Print(StructureDescription(g),
+> 	"\n"," & ",
+> 	StructureDescription(Center(g)),
+> 	"\n"," & ",
+> 	StructureDescription(AutomorphismGroup(g)),
+> 	"\n"," & ",
+> 	StructureDescription(InnerAutomorphismsAutomorphismGroup(AutomorphismGroup(g))),
+> 	" EndRow","\n","\n"); 
+> 	od;
+
+I.2.5
+
+Détermination des groupes souches
+
+gap> for g in ConstructAllGroups(2024) do 
+>	Print(StructureDescription(g),":",IsSubgroup(Center(g),DerivedSubgroup(g)),"\n");
+>	od;
+
+Détermination des sous-groupes de Fitting et de Frattini
+
+for g in L do Print(StructureDescription(g),"\n"," & ",StructureDescription(FittingSubgroup(g)), od;
+
+gap> for g in L do 
+>	Print(StructureDescription(g),"\n"," & ",StructureDescription(FittingSubgroup(g)),
+>	" & ", StructureDescription(FrattiniSubgroup(g))," Endrow","\n","\n");
+>	od;

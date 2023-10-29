@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+	
+  	<meta name="author" content="Gabriel Pallier">
+  	<meta http-equiv="Content-Language" content="en">
+  	<meta name="keywords" content="mathématiques, géométrie, théorie des groupes" lang="fr">
+  	<meta name="keywords" content="mathematics, geometry, group theory" lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Page web de Gabriel Pallier</title>
+	<meta property="og:image" content="">
+	<meta name="description" content="personal webpage">
+	<meta name="keywords" content="research interests publications">
+	<meta http-equiv="content-language" content="fr_FR">
+	<meta name="language" content="fr_FR">
+	<link rel="icon" type="image/png" href="">
+	<!-- CSS  -->
+	<link href="Gabriel%20Pallier's%20homepage_files/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+	<link href="Gabriel%20Pallier's%20homepage_files/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+	
+	
+	
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+config: ["MMLorHTML.js"],
+    jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
+extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+  "HTML-CSS": {
+    styles: {".MathJax_Preview": {visibility: "hidden"}}
+  },
+  tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+  TeX: {extensions: ["AMSmath.js","AMSsymbols.js","http://pallier.org/gabriel/xypic.js"]}
+});
+</script>
+
+<script type="text/javascript"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+	
+</head>
+
+ <body>
+
+<h4>Algèbres de Lie nilpotentes de petite dimension</h4>
+
+Les groupes ou les algèbres de Lie nilpotentes sont toutes obtenues par extensions centrales successives (de manière non unique en général) à partir de $1$ ou de l'algèbre nulle. Il en ressort un graphe dirigé répertoriant les algèbres de Lie nilpotentes, et sur lesquelles les flèches désignent ces extensions. On a dessiné ce graphe pour les algèbres de Lie réelles de dimension au plus 6, ou 7 dans le cas des algèbres filiformes. Les noms sont ceux de <a href="https://arxiv.org/abs/math/0511668">De Graaf</a> pour les algèbres de dimension au plus 6 et de <a href="https://www.hindawi.com/journals/ijmms/2008/805305/ ">Magnin</a>  (qui a suivi des conventions plus anciennes prises par Carles, Dixmier et Vergne). 
+
+La notation $\mathfrak{g} \stackrel{r}{\longrightarrow}\mathfrak{h}$ signifie que  $\mathfrak{h}$ est une extension $r$-centrale de $\mathfrak{g}$ par $\mathbf R$ tandis que $\mathfrak{g} \stackrel{\mathrm{gr}}{\dashrightarrow} \mathfrak{h}$ signifie que $\mathfrak h$ est l'algèbre graduée associée à $\mathfrak g$, ce qui est parfois noté $\mathfrak{h}=\operatorname{gr}(\mathfrak{g})$.
+
+L'image ci-dessous est une version étendue de la figure à la fin du papier <i> Cone-equivalent nilpotent groups with different Dehn functions </i> avec  Llosa Isenrich et Tessera.
+
+$\xymatrix@C=0.8cm@R=1.5cm{
+ & & & & & & & & &  \mathcal{G}_{7,0.2} \ar@{-->}@/^0.5pc/[rr]  & & \fbox{$\mathcal{G}_{7,2.3}$} & & & & \\
+ & & & &  &  \fbox{$\mathscr L_{6,19}(\delta)$} & & & \mathcal{G}_{7,1.1(i_\lambda)} \ar@{-->}@/^1pc/[rrru] & \mathcal{G}_{7,1.1(iv)} \ar@{-->}@/^0.5pc/[rru] & \mathcal{G}_{7,1.1(ii)} \ar@{-->}[ru]  & & \mathcal{G}_{7,1.6} \ar@{-->}[lu] & \mathcal{G}_{7,1.4}  \ar@{-->}@/_0.5pc/[llu] & \mathcal{G}_{7,0.1} \ar@{-->}@/_1pc/[lllu] & \mathcal{G}_{7,0.3} \ar@{-->}@/_1.5pc/[llllu] & & & \\
+\fbox{$\mathscr L_{6,4}$} & \fbox{$\mathscr L_{6,2}$} &  \fbox{$\mathscr L_{6,3}$} & \fbox{$\mathscr L_{6,8}$} & 
+\fbox{$\mathscr L_{6,25}$}
+& \mathscr{L}_{6,6} \ar@{-->}[r] &  \fbox{$\mathscr{L}_{6,7}$} &  \mathscr{L}_{6,13} \ar@{-->}[l]  &  \mathscr{L}_{6,9} & \fbox{$\mathscr{L}_{6,21}(\delta)$} &  \fbox{$\mathscr{L}_{6,16}$} & \fbox{$\mathscr{L}_{6,18}$} \ar[uu]_6 \ar[lu]_6 \ar[ru]_6 & & & & \\
+ \fbox{$\mathbf R^6$} &
+ \fbox{$\mathscr{L}_{6,22}(\delta)$} 
+& \mathscr{L}_{6,10} \ar@{-->}[u] & \mathscr{L}_{6,5} \ar@{-->}[lu] &  \mathscr{L}_{6,23} \ar@/_2pc/@{-->}[u] & \fbox{$\mathscr{L}_{6,20}$}  
+&  \mathscr{L}_{6,12} \ar@{-->}[u] 
+& \mathscr{L}_{6,11} \ar@{-->}[ul] 
+& \mathscr{L}_{6,24}(\delta) \ar@{-->}[u] 
+& \mathscr{L}_{6,14} \ar@{-->}[ru] 
+& \mathscr{L}_{6,15} \ar@{-->}[ru]  \ar[luu]_6 \ar[luuu]^6 \ar@/^2pc/[lluu]^6
+& \mathscr{L}_{6,17}  \ar@{-->}[u] \ar[rruu]^6  \ar[rrruu]^6 \ar@/_1pc/[rrrruu]_6 & & & & \\
+ & \fbox{$\mathbf R^5$}  \ar[lu]^1
+ & \fbox{$\mathscr{L}_{5,4}$} \ar[lu]^2 \ar@/^2pc/[lluu]^1
+ & \fbox{$\mathscr{L}_{5,2}$} \ar[lu]^{3} \ar[u]^3 \ar[uul]_3 \ar@/^2pc/[lluu]^1
+ & \fbox{$\mathscr{L}_{5,8}$} \ar[u]^3 \ar[ru]^3
+ \ar@/^1pc/[luu]_1 \ar@/^2pc/[uu]^3 \ar[ruuu]_3
+ & &\fbox{$\mathscr{L}_{5,3}$} \ar@/_2pc/[uu] \ar[u]_4 \ar[ru] %\ar@/_6pc/[lllluu]^1
+ & \mathscr{L}_{5,5} \ar@/_1pc/[ru] \ar@{-->}[l]  \ar@/_2pc/[uu]_4 %\ar@/_6pc/[llllu]_1 
+ & \fbox{$\mathscr L_{5,9}$} \ar@/_1pc/[ruu]_4 \ar@/_2pc/[uu]_1 
+ & \mathscr{L}_{5,6} \ar@{-->}[r]^{\mathrm{gr}} \ar[u]_5  \ar[ru]
+ & \fbox{$\mathscr{L}_{5,7}$} \ar@/_1pc/[ru]_5 \ar@/_1pc/[ruu]^5 \ar@/_1.5pc/[uu]_5 & & & & \\
+ & 
+ &\fbox{$\mathbf R^4$} \ar[ur]^2 \ar[ul]^1 \ar[u]^2 
+ & & \fbox{$\mathscr{L}_{4,2}$} \ar[urr]^3 \ar@/_2pc/[urrr]_3 \ar[ul]^1 \ar[u]^2 
+ & & & & \fbox{$\mathscr{L}_{4.3}$}  \ar[u]^3 \ar[ur]^4 \ar[rru]_4 
+ & & & & & & \\
+ & 
+ & & \fbox{$\mathbf R^3$} \ar[ul]^1 \ar[ur]^2 & & & \fbox{$\mathscr{L}_{3,2}$} \ar[ull]^1 \ar[urr]_3 & & & & & & & \\
+ & 
+ & & & \fbox{$\mathbf R^2$} \ar[ul]^1 \ar[urr]_2 & & & & \\
+ & & & & \fbox{$\mathbf R$} \ar[u]^1   & & &
+ }$
+
+
+
+</body></html>

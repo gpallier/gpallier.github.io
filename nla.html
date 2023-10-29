@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+	
+  	<meta name="author" content="Gabriel Pallier">
+  	<meta http-equiv="Content-Language" content="en">
+  	<meta name="keywords" content="mathÃ©matiques, gÃ©omÃ©trie, thÃ©orie des groupes" lang="fr">
+  	<meta name="keywords" content="mathematics, geometry, group theory" lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gabriel Pallier's homepage</title>
+	<meta property="og:image" content="">
+	<meta name="description" content="personal webpage">
+	<meta name="keywords" content="research interests publications">
+	<meta http-equiv="content-language" content="en_EN">
+	<meta name="language" content="en_EN">
+	<link rel="icon" type="image/png" href="">
+	<!-- CSS  -->
+	<link href="Gabriel%20Pallier's%20homepage_files/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+	<link href="Gabriel%20Pallier's%20homepage_files/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+	
+	
+	
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script>
+  MathJax = {
+    loader: {
+      load: ['[custom]/xypic.js'],
+      paths: {custom: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@3.0.1/build/'}
+    },
+    tex: {
+      packages: {'[+]': ['xypic']}
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.1.4/es5/tex-chtml-full.js"></script>
+<!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.1.4/es5/tex-svg-full.js"></script> -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+config: ["MMLorHTML.js"],
+    jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
+extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+  "HTML-CSS": {
+    styles: {".MathJax_Preview": {visibility: "hidden"}}
+  },
+  tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+  TeX: {extensions: ["AMSmath.js","AMSsymbols.js","http://pallier.org/gabriel/xypic.js"]}
+});
+</script>
+
+<script type="text/javascript"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+	
+</head>
+
+<bgcolor="#ffffdd">
+<body >
+
+
+<h4> Nilpotent Lie algebras of small dimension </h4>
+
+The finite-dimensional nilpotent simply connected Lie groups or nilpotent Lie algebras are all obtained by successive central extensions (in a non unique way in general) from $1$ or the null algebra. 
+This results in a oriented graph listing the nilpotent Lie algebras, and on which the arrows designate these extensions. We have drawn this graph for real Lie algebras of dimension at most 6, or 7 in the case of filiform Lie algebras. 
+The names are those of <a href="https://arxiv.org/abs/math/0511668">De Graaf</a> up to dimension 6 and of <a href="https://www.hindawi.com/journals/ijmms/2008/805305/ ">Magnin</a> in dimension 7 (who followed older conventions taken by Carles, Dixmier and Vergne). Technically, de Graaf lists the algebras over any field, while Magnin lists the Lie algebras over $\mathbf C$. If the ground field is taken to be $\mathbf R$, the discriminant $\delta$ which appears in some algebra can be taken to be $-1,0$ or $1$; these are real forms of the same complex Lie algebra, and if $\delta \neq 0$ their associated Lie groups have infinitely many distinct commensurability classes of lattices.
+
+The notation $\mathfrak{g} \stackrel{r}{\longrightarrow}\mathfrak{h}$ means that $\mathfrak{h}$ is a $r$-central extension of $\mathfrak{g}$ by $\mathbf R$, that is, there is a short exact sequence 
+\[ 0 \to \mathbf R \to \mathfrak g \to \mathfrak h \to 0, \]
+where the image of $\mathbf R$ lies in $C^i \mathfrak g \cap Z(\mathfrak g)$. $C^i \mathfrak g$ is the descending central series of $\mathfrak g$, that is, $C^1 \mathfrak g = \mathfrak g$ and $C^{i+1} \mathfrak g = [\mathfrak g, C^i \mathfrak g]$ for $i \geqslant 1$.
+
+The notation $\mathfrak{g} \stackrel{\mathrm{gr}}{\dashrightarrow} \mathfrak{h}$ means that $\mathfrak{h}=\operatorname{gr}(\mathfrak{g})$, where 
+\[  \operatorname{gr}(\mathfrak{g}) = \bigoplus_{i=1}^{+\infty} C^i \mathfrak g / C^{i+1} \mathfrak g. \]
+
+
+This is an extended version of the picture in <i> Cone-equivalent nilpotent groups with different Dehn functions </i> with Llosa Isenrich and Tessera.
+
+\[ \xymatrix@C=1.2cm@R=2cm{
+ & & & & & & & & &  \mathcal{G}_{7,0.2} \ar@{-->}@/^0.5pc/[rr]  & & \fbox{$\mathcal{G}_{7,2.3}$} & & & & \\
+ & & & &  &  \fbox{$\mathscr L_{6,19}(\delta)$} & & & \mathcal{G}_{7,1.1(i_\lambda)} \ar@{-->}@/^1pc/[rrru] & \mathcal{G}_{7,1.1(iv)} \ar@{-->}@/^0.5pc/[rru] & \mathcal{G}_{7,1.1(ii)} \ar@{-->}[ru]  & & \mathcal{G}_{7,1.6} \ar@{-->}[lu] & \mathcal{G}_{7,1.4}  \ar@{-->}@/_0.5pc/[llu] & \mathcal{G}_{7,0.1} \ar@{-->}@/_1pc/[lllu] & \mathcal{G}_{7,0.3} \ar@{-->}@/_1.5pc/[llllu] & & & \\
+\fbox{$\mathscr L_{6,4}$} & \fbox{$\mathscr L_{6,2}$} &  \fbox{$\mathscr L_{6,3}$} & \fbox{$\mathscr L_{6,8}$} & 
+\fbox{$\mathscr L_{6,25}$}
+& \mathscr{L}_{6,6} \ar@{-->}[r] &  \fbox{$\mathscr{L}_{6,7}$} &  \mathscr{L}_{6,13} \ar@{-->}[l]  &  \mathscr{L}_{6,9} & \fbox{$\mathscr{L}_{6,21}(\delta)$} &  \fbox{$\mathscr{L}_{6,16}$} & \fbox{$\mathscr{L}_{6,18}$} \ar[uu]_6 \ar[lu]_6 \ar[ru]_6 & & & & \\
+ \fbox{$\mathbf R^6$} &
+ \fbox{$\mathscr{L}_{6,22}(\delta)$} 
+& \mathscr{L}_{6,10} \ar@{-->}[u] & \mathscr{L}_{6,5} \ar@{-->}[lu] &  \mathscr{L}_{6,23} \ar@/_2pc/@{-->}[u] & \fbox{$\mathscr{L}_{6,20}$}  
+&  \mathscr{L}_{6,12} \ar@{-->}[u] 
+& \mathscr{L}_{6,11} \ar@{-->}[ul] 
+& \mathscr{L}_{6,24}(\delta) \ar@{-->}[u] 
+& \mathscr{L}_{6,14} \ar@{-->}[ru] 
+& \mathscr{L}_{6,15} \ar@{-->}[ru]  \ar[luu]_6 \ar[luuu]^6 \ar@/^2pc/[lluu]^6
+& \mathscr{L}_{6,17}  \ar@{-->}[u] \ar[rruu]^6  \ar[rrruu]^6 \ar@/_1pc/[rrrruu]_6 & & & & \\
+ & \fbox{$\mathbf R^5$}  \ar[lu]^1
+ & \fbox{$\mathscr{L}_{5,4}$} \ar[lu]^2 \ar@/^2pc/[lluu]^1
+ & \fbox{$\mathscr{L}_{5,2}$} \ar[lu]^{3} \ar[u]^3 \ar[uul]_3 \ar@/^2pc/[lluu]^1
+ & \fbox{$\mathscr{L}_{5,8}$} \ar[u]^3 \ar[ru]^3
+ \ar@/^1pc/[luu]_1 \ar@/^2pc/[uu]^3 \ar[ruuu]_3
+ & &\fbox{$\mathscr{L}_{5,3}$} \ar@/_2pc/[uu] \ar[u]_4 \ar[ru] %\ar@/_6pc/[lllluu]^1
+ & \mathscr{L}_{5,5} \ar@/_1pc/[ru] \ar@{-->}[l]  \ar@/_2pc/[uu]_4 %\ar@/_6pc/[llllu]_1 
+ & \fbox{$\mathscr L_{5,9}$} \ar@/_1pc/[ruu]_4 \ar@/_2pc/[uu]_1 
+ & \mathscr{L}_{5,6} \ar@{-->}[r]^{\mathrm{gr}} \ar[u]_5  \ar[ru]
+ & \fbox{$\mathscr{L}_{5,7}$} \ar@/_1pc/[ru]_5 \ar@/_1pc/[ruu]^5 \ar@/_1.5pc/[uu]_5 & & & & \\
+ & 
+ &\fbox{$\mathbf R^4$} \ar[ur]^2 \ar[ul]^1 \ar[u]^2 
+ & & \fbox{$\mathscr{L}_{4,2}$} \ar[urr]^3 \ar@/_2pc/[urrr]_3 \ar[ul]^1 \ar[u]^2 
+ & & & & \fbox{$\mathscr{L}_{4.3}$}  \ar[u]^3 \ar[ur]^4 \ar[rru]_4 
+ & & & & & & \\
+ & 
+ & & \fbox{$\mathbf R^3$} \ar[ul]^1 \ar[ur]^2 & & & \fbox{$\mathscr{L}_{3,2}$} \ar[ull]^1 \ar[urr]_3 & & & & & & & \\
+ & 
+ & & & \fbox{$\mathbf R^2$} \ar[ul]^1 \ar[urr]_2 & & & & \\
+ & & & & \fbox{$\mathbf R$} \ar[u]^1   & & &
+ }
+\]
+
+This picture was displayed here with the help of <a href="https://github.com/sonoisa/XyJax" target="_blank"> the XYpic extension for MathJax</a>.
+
+</body></html>
